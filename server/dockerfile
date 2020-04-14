@@ -1,0 +1,9 @@
+FROM java:8
+
+VOLUME /servervol:/serverdata
+
+ADD server.jar server.jar
+
+EXPOSE 8080
+
+CMD java - jar server.jar
