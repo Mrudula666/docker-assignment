@@ -1,9 +1,9 @@
 FROM java:8
 
-VOLUME /servervol
+VOLUME /clientvol:/clientdata
 
-ADD server.jar server.jar
+ADD client.jar client.jar
 
 EXPOSE 8080
 
-CMD java - jar server.jar
+CMD java - jar client.jar
